@@ -92,6 +92,8 @@
         @yield('content')
     </main>
 
+    @include('partials.floating-contact')
+
     @include('partials.contact-cta')
 
     <footer class="mt-10 border-t border-brand-200/60 bg-[#f8f6f1]/70">

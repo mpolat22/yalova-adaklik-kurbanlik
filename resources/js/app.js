@@ -279,6 +279,66 @@ const setupGallery = () => {
     });
 };
 
+const setupFloatingContact = () => {
+    document.querySelectorAll('[data-floating-contact]').forEach((panel) => {
+        let isOpen = true;
+        let lastScrollY = window.scrollY;
+        let downwardDistance = 0;
+        let hasAutoCollapsed = false;
+        const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+        const updatePanel = (open) => {
+            isOpen = open;
+            panel.classList.toggle('is-open', open);
+            panel.classList.toggle('is-collapsed', !open);
+        };
+
+        if (supportsHover) {
+            panel.addEventListener('mouseenter', () => updatePanel(true));
+            panel.addEventListener('mouseleave', () => {
+                if (hasAutoCollapsed) {
+                    updatePanel(false);
+                }
+            });
+        }
+
+        panel.addEventListener('focusin', () => updatePanel(true));
+        panel.addEventListener('focusout', (event) => {
+            if (hasAutoCollapsed && !panel.contains(event.relatedTarget)) {
+                updatePanel(false);
+            }
+        });
+
+        panel.addEventListener('click', (event) => {
+            if (!supportsHover && !isOpen && event.target.closest('.floating-contact__action')) {
+                event.preventDefault();
+                updatePanel(true);
+            }
+        }, true);
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            const scrollDifference = currentScrollY - lastScrollY;
+
+            if (scrollDifference > 0) {
+                downwardDistance += scrollDifference;
+
+                if (isOpen && currentScrollY > 96 && downwardDistance > 48) {
+                    hasAutoCollapsed = true;
+                    updatePanel(false);
+                    downwardDistance = 0;
+                }
+            } else if (scrollDifference < 0) {
+                downwardDistance = 0;
+            }
+
+            lastScrollY = currentScrollY;
+        }, { passive: true });
+    });
+};
+
+setupFloatingContact();
+
 mountComponent('[data-site-nav]', SiteNav);
 
 if (document.querySelector('[data-faq-list]')) {
