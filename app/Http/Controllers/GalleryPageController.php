@@ -26,10 +26,12 @@ class GalleryPageController extends Controller
         $videoItems = collect($this->mediaFiles('videos/gallery', ['mp4']))
             ->map(function (SplFileInfo $file): array {
                 $title = $this->titleFromFile($file);
+                $posterPath = 'images/gallery/video-posters/' . $file->getFilenameWithoutExtension() . '.webp';
 
                 return [
                     'url' => asset('videos/gallery/' . $file->getFilename()),
                     'title' => $title !== '' ? $title : 'Galeri Videosu',
+                    'poster_url' => asset($posterPath),
                 ];
             })
             ->values();
@@ -206,7 +208,7 @@ class GalleryPageController extends Controller
                 '@type' => 'VideoObject',
                 'contentUrl' => $videoItem['url'],
                 'name' => $videoItem['title'],
-                'thumbnailUrl' => $this->imageUrl('/images/yalova-adaklik-kurbanlik-hero-ferah.webp'),
+                'thumbnailUrl' => $videoItem['poster_url'],
             ];
         }
 

@@ -155,10 +155,11 @@
                     @foreach ($videoItems as $videoItem)
                         <article class="overflow-hidden rounded-[2rem] border border-brand-200/70 bg-white/92 shadow-[0_18px_46px_rgba(44,48,44,0.08)]">
                             <video
-                                class="aspect-[4/4.8] w-full bg-brand-950 object-cover"
+                                class="aspect-[4/4.8] w-full bg-brand-900 object-cover"
                                 controls
                                 preload="metadata"
                                 playsinline
+                                poster="{{ $videoItem['poster_url'] }}"
                             >
                                 <source src="{{ $videoItem['url'] }}" type="video/mp4">
                                 Tarayıcınız video oynatmayı desteklemiyor.
