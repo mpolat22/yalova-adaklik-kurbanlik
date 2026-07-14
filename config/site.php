@@ -1,0 +1,37 @@
+<?php
+
+return [
+    'name' => 'Elgin Kurbanlık ve Adaklık',
+    'legal_name' => 'Elgin Kurbanlık ve Adaklık',
+    'domain' => env('APP_URL', 'https://yalovaadaklikkurbanlik.com'),
+    'default_title' => 'Elgin Kurbanlık ve Adaklık',
+    'default_description' => 'Yalova merkezli Elgin Kurbanlık ve Adaklık; adaklık, kurbanlık, akika ve şükür kurbanı süreçleri için güven veren yerel hizmet sunar.',
+    'default_og_image' => '/images/yalova-adaklik-kurbanlik-hero.webp',
+    'logo_path' => '/images/elgin-logo.png',
+    'phone_display' => '0541 364 93 79',
+    'phone_link' => '905413649379',
+    'secondary_phone_display' => '0544 418 48 98',
+    'secondary_phone_link' => '905444184898',
+    'whatsapp_link' => '905413649379',
+    'email' => 'yalovadaklik@hotmail.com',
+    'facebook_url' => 'https://www.facebook.com/share/1DpHiNKPzM/?mibextid=wwXIfr',
+    'instagram_url' => 'https://www.instagram.com/elginkurbanlikadaklik?igsh=MTBrcTlmeGUxanA3eA%3D%3D&utm_source=qr',
+    'address' => 'Çiftlik, Güvercin Sk. no:8, 77600 Çiftlikköy/Yalova',
+    'district' => 'Çiftlikköy',
+    'city' => 'Yalova',
+    'postal_code' => '77600',
+    'maps_url' => 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cae35582ea184d:0x419015c6eaa0d815?sa=X&ved=1t:8290&ictx=111',
+    'business_profile_url' => 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x14cae35582ea184d:0x419015c6eaa0d815?sa=X&ved=1t:8290&ictx=111',
+    'service_areas' => [
+        'Yalova Merkez',
+        'Çiftlikköy',
+        'Altınova',
+        'Çınarcık',
+        'Termal',
+    ],
+    'hero_points' => [
+        'İki ayrı telefon hattı ile hızlı ulaşım',
+        'WhatsApp üzerinden kolay iletişim',
+        'Yalova merkez ve ilçelere hizmet',
+    ],
+];
