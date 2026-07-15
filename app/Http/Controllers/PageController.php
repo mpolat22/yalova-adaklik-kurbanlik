@@ -22,7 +22,7 @@ class PageController extends Controller
             'faqs' => $faqs,
             'meta' => $this->meta(
                 title: 'Yalova Adaklık ve Kurbanlık | Elgin Adaklık ve Kurbanlık',
-                description: 'Yalova adaklık ve kurbanlık hizmeti için İslami hassasiyet, düzenli bakım, vekalet ile kesim ve açık iletişim sunan Elgin Adaklık ve Kurbanlık ana sayfası.',
+                description: 'Yalova’da adaklık ve kurbanlık için küçükbaş satışı, İslami usullere uygun kesim, ücretsiz parçalama ve paketleme hizmetlerini yaklaşık 30 yıllık tecrübeyle sunuyoruz.',
                 path: '/',
                 imagePath: '/images/yalova-adaklik-kurbanlik-hero-ferah.webp',
                 imageAlt: 'Yalova adaklık ve kurbanlık için gündüz merada otlayan küçükbaş sürüsü'
@@ -43,7 +43,7 @@ class PageController extends Controller
             'services' => $services,
             'meta' => $this->meta(
                 title: 'Hizmetlerimiz | Yalova Adaklık ve Kurbanlık',
-                description: 'Yalova’da adaklık, kurbanlık, akika ve şükür kurbanı için küçükbaş satışı, İslami usullere uygun kesim, ücretsiz parçalama, paketleme ve vekâlet hizmetleri.',
+                description: 'Yalova’da adaklık ve kurbanlık için küçükbaş satışından İslami kesime, ücretsiz parçalama ve paketlemeden vekâletle dağıtıma kadar hizmetlerimizi inceleyin.',
                 path: '/hizmetler',
                 imagePath: '/images/yalova-adaklik-kurbanlik-hero-ferah.webp',
                 imageAlt: 'Yalova adaklık ve kurbanlık hizmetlerimiz için küçükbaş sürüsü'
@@ -85,7 +85,7 @@ class PageController extends Controller
         return $this->page('pages.about', [
             'meta' => $this->meta(
                 title: 'Hakkımızda | Yalova Elgin Adaklık ve Kurbanlık',
-                description: 'Yalova Elgin Adaklık ve Kurbanlık hakkında; yaklaşık 30 yıllık tecrübe, İslami şartlara uygun hizmet anlayışı, vekalet ile kesim ve Yalova merkezli yerel yapı bilgileri.',
+                description: 'Elgin Adaklık ve Kurbanlık’ın Yalova’da yaklaşık 30 yıllık küçükbaş yetiştiriciliği tecrübesini, hayvan bakım anlayışını ve hizmetlerini tanıyın.',
                 path: '/hakkimizda',
                 imagePath: '/images/yalova-adaklik-kurbanlik-hero-ferah.webp',
                 imageAlt: 'Yalova Elgin Adaklık ve Kurbanlık için gündüz merada otlayan küçükbaş sürüsü'
@@ -106,7 +106,7 @@ class PageController extends Controller
         return $this->page('pages.contact', [
             'meta' => $this->meta(
                 title: 'İletişim | Yalova Elgin Adaklık ve Kurbanlık',
-                description: 'Yalova adaklık ve kurbanlık hizmeti için Serhat Elgin ve Sercan Elgin iletişim numaraları, WhatsApp, sosyal medya ve Çiftlikköy adres bilgilerine buradan ulaşın.',
+                description: 'Yalova’da adaklık, kurbanlık, akika ve şükür kurbanı için telefon veya WhatsApp’tan bize ulaşın; adres ve konumumuzu görüntüleyin.',
                 path: '/iletisim',
                 imagePath: '/images/yalova-adaklik-kurbanlik-hero-ferah.webp',
                 imageAlt: 'Yalova adaklık ve kurbanlık için iletişim görseli'
@@ -326,7 +326,7 @@ class PageController extends Controller
                 'card_label' => 'Adaklık',
                 'card_copy' => 'Adak, akika ve şükür kurbanı için sağlıklı koyun, kuzu, koç ve keçi seçenekleri sunuyor; Yalova’da süreci İslami hassasiyet ve özenle yürütüyoruz.',
                 'seo_title' => 'Yalova Adaklık Hizmeti | Elgin Adaklık ve Kurbanlık',
-                'seo_description' => 'Yalova’da adak, akika ve şükür kurbanı için koyun, kuzu, koç ve keçi seçenekleri sunuyor; İslami usullere uygun kesim, ücretsiz parçalama ve paketleme yapıyoruz.',
+                'seo_description' => 'Yalova’da adak, akika ve şükür kurbanı için koyun, kuzu, koç ve keçi seçenekleri sunuyoruz; kesimden paketli teslime kadar süreci tamamlıyoruz.',
                 'image_path' => '/images/yalova-adaklik.webp',
                 'image_alt' => 'Yalova adaklık hizmeti için koyun, keçi ve kuzu görseli',
                 'hero_kicker' => 'Yalova Elgin Adaklık ve Kurbanlık',
@@ -386,7 +386,7 @@ class PageController extends Controller
                 'card_label' => 'Kurbanlık',
                 'card_copy' => 'Yalova’da kurban ibadetinizi gönül rahatlığıyla yerine getirebilmeniz için bakımlı ve sağlıklı küçükbaş kurbanlık seçenekleri sunuyoruz.',
                 'seo_title' => 'Yalova Kurbanlık Hizmeti | Elgin Adaklık ve Kurbanlık',
-                'seo_description' => 'Yalova’da Kurban Bayramı için koyun, koç ve keçi seçenekleri sunuyor; İslami usullere uygun kesim, ücretsiz parçalama ve paketleme yapıyoruz.',
+                'seo_description' => 'Yalova’da Kurban Bayramı için koyun, koç ve keçi seçeneklerini inceleyin; İslami kesim, ücretsiz parçalama ve paketleme hizmetlerinden yararlanın.',
                 'image_path' => '/images/yalova-kurbanlik.webp',
                 'image_alt' => 'Yalova kurbanlık hizmeti için küçükbaş sürüsü',
                 'hero_kicker' => 'Yalova Elgin Adaklık ve Kurbanlık',
@@ -460,7 +460,7 @@ class PageController extends Controller
                 'card_label' => 'Parçalama ve paketleme',
                 'card_copy' => 'Kesim sonrasında etleri isteğinize uygun şekilde ücretsiz parçalıyor, hijyenik koşullarda özenle paketleyerek teslim ediyoruz.',
                 'seo_title' => 'Yalova Adaklık Kurbanlık Ücretsiz Parçalama ve Paketleme | Elgin',
-                'seo_description' => 'Yalova’da adaklık ve kurbanlık kesimi sonrasında etleri isteğinize uygun şekilde ücretsiz parçalıyor, hijyenik koşullarda paketleyerek teslim ediyoruz.',
+                'seo_description' => 'Yalova’da adaklık ve kurbanlık kesimi sonrası etleri isteğinize uygun ücretsiz parçalıyor, hijyenik koşullarda paketleyerek teslim ediyoruz.',
                 'image_path' => '/images/yalova-adaklik-kurbanlik-ucretsiz-parcalama-ve-paketleme.webp',
                 'image_alt' => 'Ücretsiz parçalama ve paketleme hizmeti için küçükbaş görseli',
                 'hero_kicker' => 'Hizmetlerimiz',
@@ -534,7 +534,7 @@ class PageController extends Controller
                 'card_label' => 'Hijyenik kesim',
                 'card_copy' => 'Adaklık ve kurbanlık kesimlerini İslami usullere uygun, kapalı ve hijyenik ortamda titizlikle gerçekleştiriyoruz.',
                 'seo_title' => 'Yalova Adaklık Kurbanlık Kapalı ve Hijyenik Ortamda Kesim | Elgin',
-                'seo_description' => 'Yalova adaklık ve kurbanlık süreçlerinde kapalı ve hijyenik ortamda kesim hizmeti, İslami uygunluk hassasiyeti ve kontrollü çalışma düzeni hakkında bilgi veren detay sayfası.',
+                'seo_description' => 'Yalova’da adaklık ve kurbanlık kesimlerini kapalı ve hijyenik alanımızda, İslami usulleri gözeterek titizlikle gerçekleştiriyoruz.',
                 'image_path' => '/images/yalova-adaklik-kurbanlik-kapali-ve-hijyenik-ortamda-kesim.webp',
                 'image_alt' => 'Kapalı ve hijyenik ortamda kesim hizmeti için küçükbaş görseli',
                 'hero_kicker' => 'Hizmetlerimiz',
@@ -608,7 +608,7 @@ class PageController extends Controller
                 'card_label' => 'Vekalet ile hizmet',
                 'card_copy' => 'Şehir dışında olsanız da vekâletinizi alıyor, kesim sırasında sizi görüntülü arayarak süreci takip etmenizi sağlıyor; kesim ve dağıtımı adınıza güvenle tamamlıyoruz.',
                 'seo_title' => 'Yalova Vekâletle Kesim ve Dağıtım | Elgin',
-                'seo_description' => 'Yalova’da adaklık ve kurbanlık için vekâletle kesim, görüntülü takip, ücretsiz parçalama, paketleme ve talebe göre dağıtım hizmeti sunuyoruz.',
+                'seo_description' => 'Yalova’da adaklık ve kurbanlık için vekâlet alıyoruz, kesim sırasında görüntülü arama yapıyoruz ve talep hâlinde dağıtımı üstleniyoruz.',
                 'image_path' => '/images/yalova-adaklik-kurbanlik-vekalet-ile-kesim-ve-dagitim.webp',
                 'image_alt' => 'Vekalet ile kesim ve dağıtım hizmeti için küçükbaş görseli',
                 'hero_kicker' => 'Hizmetlerimiz',
@@ -682,7 +682,7 @@ class PageController extends Controller
                 'card_label' => 'Uygun fiyat',
                 'card_copy' => 'Bakımlı ve sağlıklı adaklık ile kurbanlık seçeneklerini bütçenize uygun fiyatlarla, açık bilgilendirme anlayışıyla sunuyoruz.',
                 'seo_title' => 'Yalova Uygun Fiyatlı Adaklık ve Kurbanlık | Elgin',
-                'seo_description' => 'Yalova’da adaklık ve kurbanlık için bütçenize uygun küçükbaş seçenekleri sunuyor; kesim sonrası parçalama ve paketlemeyi ücretsiz yapıyoruz.',
+                'seo_description' => 'Yalova’da bütçenize uygun adaklık ve kurbanlık seçenekleri sunuyoruz; parçalama ve paketleme işlemleri için ek ücret almıyoruz.',
                 'image_path' => '/images/yalova-adaklik-kurbanlik-uygun-fiyat-garantisi.webp',
                 'image_alt' => 'Uygun fiyat garantisi hizmeti için koyun, keçi ve kuzu görseli',
                 'hero_kicker' => 'Hizmetlerimiz',
@@ -756,7 +756,7 @@ class PageController extends Controller
                 'card_label' => 'Kolay ödeme',
                 'card_copy' => 'Nakit ve EFT/Havale ödeme seçenekleriyle adaklık ve kurbanlık alışverişinizi kolayca tamamlayabilirsiniz.',
                 'seo_title' => 'Yalova Adaklık ve Kurbanlık Kolay Ödeme | Elgin',
-                'seo_description' => 'Yalova’da adaklık ve kurbanlık alışverişinizi nakit veya EFT/Havale ile tamamlayabilir; ücretsiz parçalama ve paketleme hizmetinden yararlanabilirsiniz.',
+                'seo_description' => 'Yalova’da adaklık ve kurbanlık alışverişinizi nakit veya EFT/Havale seçeneklerinden size uygun olanla kolayca tamamlayabilirsiniz.',
                 'image_path' => '/images/yalova-adaklik-kurbanlik-kolay-odeme-imkani.webp',
                 'image_alt' => 'Kolay ödeme imkânı hizmeti için koyun, keçi ve kuzu görseli',
                 'hero_kicker' => 'Hizmetlerimiz',
@@ -830,7 +830,7 @@ class PageController extends Controller
                 'card_label' => 'Canlı hayvan',
                 'card_copy' => 'Koyun, kuzu, koç ve keçi gruplarında sağlıklı küçükbaş hayvan alım satımı hizmeti sunuyoruz.',
                 'seo_title' => 'Yalova Canlı Hayvan Alım Satımı | Elgin',
-                'seo_description' => 'Yalova Çiftlikköy’de koyun, kuzu, koç ve keçi alım satımı yapıyor; bakımlı küçükbaş seçeneklerini yaklaşık 30 yıllık tecrübemizle sunuyoruz.',
+                'seo_description' => 'Yalova’da koyun, kuzu, koç ve keçi gruplarında yaklaşık 30 yıllık yetiştiricilik tecrübemizle canlı hayvan alım satımı yapıyoruz.',
                 'image_path' => '/images/yalova-adaklik-kurbanlik-canli-hayvan-alim-satimi.webp',
                 'image_alt' => 'Canlı hayvan alım satımı hizmeti için küçükbaş sürüsü',
                 'hero_kicker' => 'Hizmetlerimiz',

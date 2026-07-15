@@ -43,7 +43,7 @@ class GalleryPageController extends Controller
             'navLinks' => $this->navLinks(),
             'meta' => $this->meta(
                 title: 'Galeri | Yalova Elgin Adaklık ve Kurbanlık',
-                description: 'Yalova’daki Elgin Adaklık ve Kurbanlık işletmemize, küçükbaş hayvanlarımıza ve hizmet süreçlerimize ait güncel fotoğraf ve videoları inceleyin.',
+                description: 'Yalova’daki adaklık ve kurbanlık hizmetlerimizi, küçükbaş hayvanlarımızı ve işletme ortamımızı güncel fotoğraf ve kısa videolarla inceleyin.',
                 path: '/galeri',
                 imagePath: '/images/yalova-adaklik-kurbanlik-hero-ferah.webp',
                 imageAlt: 'Yalova Elgin Adaklık ve Kurbanlık galeri görselleri'
@@ -217,7 +217,7 @@ class GalleryPageController extends Controller
             '@type' => 'CollectionPage',
             'name' => 'Yalova Elgin Adaklık ve Kurbanlık Galerisi',
             'url' => route('gallery'),
-            'description' => 'Yalova’daki Elgin Adaklık ve Kurbanlık işletmemize, küçükbaş hayvanlarımıza ve hizmet süreçlerimize ait güncel fotoğraf ve videoları inceleyin.',
+            'description' => 'Yalova’daki adaklık ve kurbanlık hizmetlerimizi, küçükbaş hayvanlarımızı ve işletme ortamımızı güncel fotoğraf ve kısa videolarla inceleyin.',
             'mainEntity' => [
                 '@type' => 'ImageGallery',
                 'name' => 'Elgin Adaklık ve Kurbanlık Galerisi',
