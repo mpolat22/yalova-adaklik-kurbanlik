@@ -6,7 +6,7 @@ use Tests\TestCase;
 
 class HomeFaqTest extends TestCase
 {
-    public function test_home_page_shows_six_closed_seo_faq_items_between_gallery_and_contact(): void
+    public function test_home_page_shows_seven_closed_seo_faq_items_between_gallery_and_contact(): void
     {
         $response = $this->get(route('home'));
 
@@ -23,7 +23,7 @@ class HomeFaqTest extends TestCase
 
         $content = $response->getContent();
 
-        $this->assertSame(6, substr_count($content, 'data-home-faq-item'));
+        $this->assertSame(7, substr_count($content, 'data-home-faq-item'));
         $this->assertSame(0, preg_match('/<details[^>]*data-home-faq-item[^>]*\sopen(?:\s|>)/', $content));
         $this->assertStringContainsString('name="home-faq"', $content);
     }
@@ -34,7 +34,8 @@ class HomeFaqTest extends TestCase
 
         $this->assertStringContainsString('"@type":"FAQPage"', $content);
         $this->assertStringContainsString('Ödemelerde nakit ve EFT/Havale kabul ediyoruz.', $content);
-        $this->assertSame(6, substr_count($content, '"@type":"Question"'));
-        $this->assertSame(6, substr_count($content, '"@type":"Answer"'));
+        $this->assertSame(7, substr_count($content, '"@type":"Question"'));
+        $this->assertSame(7, substr_count($content, '"@type":"Answer"'));
+        $this->assertStringContainsString('Açılış veya temel atma alanında kesim yapıyor musunuz?', $content);
     }
 }

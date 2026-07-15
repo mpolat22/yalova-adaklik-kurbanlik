@@ -26,7 +26,7 @@
 
     <section class="section pt-0 pb-10 sm:pb-14">
         <div class="shell">
-            <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
                 @foreach ($services as $service)
                     @php($cardTitle = \Illuminate\Support\Str::replaceEnd(' Hizmeti', '', $service['title']))
                     <a href="{{ $service['url'] }}" class="group flex h-full flex-col overflow-hidden rounded-[1.9rem] border border-brand-200/70 bg-white/92 shadow-[0_18px_46px_rgba(44,48,44,0.08)] transition duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-[0_26px_60px_rgba(44,48,44,0.16)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/80" data-service-grid-card>

@@ -6,7 +6,7 @@ use Tests\TestCase;
 
 class ServiceCardCopyTest extends TestCase
 {
-    public function test_all_eight_approved_service_summaries_are_shown_on_service_cards(): void
+    public function test_all_nine_approved_service_summaries_are_shown_on_service_cards(): void
     {
         $approvedCopies = [
             'Adak, akika ve şükür kurbanı için sağlıklı koyun, kuzu, koç ve keçi seçenekleri sunuyor; Yalova’da süreci İslami hassasiyet ve özenle yürütüyoruz.',
@@ -17,6 +17,7 @@ class ServiceCardCopyTest extends TestCase
             'Bakımlı ve sağlıklı adaklık ile kurbanlık seçeneklerini bütçenize uygun fiyatlarla, açık bilgilendirme anlayışıyla sunuyoruz.',
             'Nakit ve EFT/Havale ödeme seçenekleriyle adaklık ve kurbanlık alışverişinizi kolayca tamamlayabilirsiniz.',
             'Koyun, kuzu, koç ve keçi gruplarında sağlıklı küçükbaş hayvan alım satımı hizmeti sunuyoruz.',
+            'Yalova’da açılış, temel atma ve benzeri organizasyonlar için seçtiğiniz küçükbaşı kendi aracımızla getiriyor; talebe göre kesim, yüzme, parçalama ve paketleme işlemlerini yerinde tamamlıyoruz.',
         ];
 
         foreach ([route('home'), route('services')] as $url) {

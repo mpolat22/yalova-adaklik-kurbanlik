@@ -106,7 +106,7 @@ class PageController extends Controller
         return $this->page('pages.contact', [
             'meta' => $this->meta(
                 title: 'İletişim | Yalova Elgin Adaklık ve Kurbanlık',
-                description: 'Yalova’da adaklık, kurbanlık, akika ve şükür kurbanı için telefon veya WhatsApp’tan bize ulaşın; adres ve konumumuzu görüntüleyin.',
+                description: 'Yalova’da adaklık ve kurbanlık için telefon veya WhatsApp’tan bize ulaşın; açık adres, harita ve toplu taşıma bilgilerini görüntüleyin.',
                 path: '/iletisim',
                 imagePath: '/images/yalova-adaklik-kurbanlik-hero-ferah.webp',
                 imageAlt: 'Yalova adaklık ve kurbanlık için iletişim görseli'
@@ -249,6 +249,10 @@ class PageController extends Controller
             [
                 'question' => 'Vekâlet ile kesim ve dağıtım hizmetiniz var mı?',
                 'answer' => 'Evet. İşletmemize gelemeyen müşterilerimiz için vekâlet ile kesim ve dağıtım hizmeti sunuyoruz. Vekâlet ve süreç detaylarını kesim öncesinde netleştirerek işlemleri talebinize uygun şekilde yürütüyoruz.',
+            ],
+            [
+                'question' => 'Açılış veya temel atma alanında kesim yapıyor musunuz?',
+                'answer' => 'Evet. Yalova’da açılış, temel atma ve benzeri organizasyonlar için seçtiğiniz küçükbaşı kendi aracımızla getiriyor; kesime uygun özel alanda talebe göre kesim, yüzme, parçalama ve paketleme işlemlerini tamamlıyoruz.',
             ],
             [
                 'question' => 'Yalova adaklık ve kurbanlık fiyatları ile ödeme seçenekleri nelerdir?',
@@ -896,6 +900,52 @@ class PageController extends Controller
                         'copy' => 'Yerel hizmet yapımızla yakın iletişim ve güven veren bilgilendirme sunuyoruz.',
                     ],
                 ],
+            ],
+            'yalova-acilis-temel-atma-adaklik-kesimi' => [
+                'slug' => 'yalova-acilis-temel-atma-adaklik-kesimi',
+                'path' => '/hizmetler/yalova-acilis-temel-atma-adaklik-kesimi',
+                'title' => 'Açılış ve Temel Atma İçin Yerinde Kesim Hizmeti',
+                'card_label' => 'Yerinde hizmet',
+                'card_copy' => 'Yalova’da açılış, temel atma ve benzeri organizasyonlar için seçtiğiniz küçükbaşı kendi aracımızla getiriyor; talebe göre kesim, yüzme, parçalama ve paketleme işlemlerini yerinde tamamlıyoruz.',
+                'seo_title' => 'Yalova Açılış ve Temel Atma Adaklık Kesimi | Elgin',
+                'seo_description' => 'Yalova’da açılış, temel atma ve benzeri organizasyonlar için seçtiğiniz adaklığı kendi aracımızla getiriyor; kesim, yüzme, parçalama ve paketleme yapıyoruz.',
+                'image_path' => '/images/yalova-acilis-temel-atma-adaklik-kesimi.webp',
+                'image_alt' => 'Yalova’da açılış ve temel atma için yerinde adaklık kesimi hizmetini temsil eden küçükbaş görseli',
+                'hero_kicker' => 'Hizmetlerimiz',
+                'hero_title' => 'Açılış ve Temel Atma İçin Yerinde Kesim',
+                'hero_description' => 'Yalova’da açılış, temel atma ve benzeri organizasyonlar için seçtiğiniz küçükbaşı kendi aracımızla adrese getiriyor; talebe göre kesim, yüzme, parçalama ve paketleme işlemlerini yerinde tamamlıyoruz.',
+                'section_eyebrow' => 'Yerinde Kesim Hizmeti',
+                'section_title' => 'Yalova’da Açılış ve Temel Atma Organizasyonlarına Özel Hizmet',
+                'intro_paragraphs' => [
+                    'Elgin Adaklık ve Kurbanlık olarak Yalova’da iş yeri açılışı, inşaat temeli ve benzeri organizasyonlar için seçtiğiniz adaklığı kendi aracımızla belirlenen adrese getiriyoruz. Hayvan seçimini, adresi, ulaşım zamanını ve yerinde yapılacak işlemleri organizasyon öncesinde netleştiriyoruz.',
+                    'Kesimi, kesime uygun özel alanda İslami usullere ve dini hassasiyetlere göre gerçekleştiriyoruz. Kesimin ardından talebinize göre yüzme, parçalama ve paketleme işlemlerini aynı yerde tamamlıyor; hizmet kapsamını ihtiyacınıza göre uyguluyoruz.',
+                ],
+                'trust_cards' => $this->serviceValueCards([
+                    [
+                        'icon' => 'location',
+                        'label' => 'Ulaşım',
+                        'title' => 'Kendi Aracımızla Adrese Ulaşım',
+                        'copy' => 'Seçtiğiniz küçükbaşı açılış, temel atma veya organizasyon alanına kendi aracımızla getiriyoruz.',
+                    ],
+                    [
+                        'icon' => 'shield',
+                        'label' => 'İslami Hassasiyet',
+                        'title' => 'İslami Usullere Uygun Yerinde Kesim',
+                        'copy' => 'Kesimi dini hassasiyetleri gözeterek, kesime uygun özel alanda gerçekleştiriyoruz.',
+                    ],
+                    [
+                        'icon' => 'checklist',
+                        'label' => 'Talebe Göre İşlem',
+                        'title' => 'Yüzme, Parçalama ve Paketleme',
+                        'copy' => 'Kesimin ardından yüzme, parçalama ve paketleme işlemlerinden ihtiyaç duyduklarınızı aynı yerde tamamlıyoruz.',
+                    ],
+                    [
+                        'icon' => 'clock',
+                        'label' => 'Planlı Hizmet',
+                        'title' => 'Organizasyon Öncesinde Belirlenen Hizmet Akışı',
+                        'copy' => 'Adresi, ulaşım zamanını ve yapılacak işlemleri organizasyon öncesinde netleştirerek hizmeti belirlenen kapsamda tamamlıyoruz.',
+                    ],
+                ]),
             ],
         ];
 

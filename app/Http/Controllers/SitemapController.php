@@ -20,6 +20,7 @@ class SitemapController extends Controller
             route('services.show', 'yalova-adaklik-kurbanlik-uygun-fiyat-garantisi'),
             route('services.show', 'yalova-adaklik-kurbanlik-kolay-odeme-imkani'),
             route('services.show', 'yalova-adaklik-kurbanlik-canli-hayvan-alim-satimi'),
+            route('services.show', 'yalova-acilis-temel-atma-adaklik-kesimi'),
             route('gallery'),
             route('contact'),
         ];

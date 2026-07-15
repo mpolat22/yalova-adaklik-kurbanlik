@@ -19,6 +19,9 @@ class ContactPageTest extends TestCase
         $this->assertStringNotContainsString('Google Haritalar üzerinde görüntüleyin', $content);
         $this->assertStringContainsString('Telefon, WhatsApp ve Konum Bilgilerimiz', $content);
         $this->assertStringContainsString('Adaklık ve kurbanlık hakkında bilgi almak için Serhat Elgin veya Sercan Elgin’e telefonla ulaşabilir;', $content);
+        $this->assertStringContainsString('Toplu Taşımayla Ulaşım', $content);
+        $this->assertStringContainsString('Toplu taşıma araçları işletmemizin doğrudan önünden geçmektedir.', $content);
+        $this->assertSame(1, substr_count($content, 'data-public-transport'));
         $this->assertSame(1, substr_count($content, e($heroTitle)));
         $this->assertStringNotContainsString("Çiftlikköy Yalova'daki işletmemizde", $content);
     }

@@ -20,8 +20,9 @@ class MetaDescriptionsTest extends TestCase
             '/hizmetler/yalova-adaklik-kurbanlik-uygun-fiyat-garantisi' => 'Yalova’da bütçenize uygun adaklık ve kurbanlık seçenekleri sunuyoruz; parçalama ve paketleme işlemleri için ek ücret almıyoruz.',
             '/hizmetler/yalova-adaklik-kurbanlik-kolay-odeme-imkani' => 'Yalova’da adaklık ve kurbanlık alışverişinizi nakit veya EFT/Havale seçeneklerinden size uygun olanla kolayca tamamlayabilirsiniz.',
             '/hizmetler/yalova-adaklik-kurbanlik-canli-hayvan-alim-satimi' => 'Yalova’da koyun, kuzu, koç ve keçi gruplarında yaklaşık 30 yıllık yetiştiricilik tecrübemizle canlı hayvan alım satımı yapıyoruz.',
+            '/hizmetler/yalova-acilis-temel-atma-adaklik-kesimi' => 'Yalova’da açılış, temel atma ve benzeri organizasyonlar için seçtiğiniz adaklığı kendi aracımızla getiriyor; kesim, yüzme, parçalama ve paketleme yapıyoruz.',
             '/galeri' => 'Yalova’daki adaklık ve kurbanlık hizmetlerimizi, küçükbaş hayvanlarımızı ve işletme ortamımızı güncel fotoğraf ve kısa videolarla inceleyin.',
-            '/iletisim' => 'Yalova’da adaklık, kurbanlık, akika ve şükür kurbanı için telefon veya WhatsApp’tan bize ulaşın; adres ve konumumuzu görüntüleyin.',
+            '/iletisim' => 'Yalova’da adaklık ve kurbanlık için telefon veya WhatsApp’tan bize ulaşın; açık adres, harita ve toplu taşıma bilgilerini görüntüleyin.',
         ];
 
         foreach ($pages as $path => $description) {

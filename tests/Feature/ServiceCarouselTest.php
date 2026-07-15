@@ -6,7 +6,7 @@ use Tests\TestCase;
 
 class ServiceCarouselTest extends TestCase
 {
-    public function test_home_page_shows_all_eight_services_after_about_section(): void
+    public function test_home_page_shows_all_nine_services_after_about_section(): void
     {
         $response = $this->get(route('home'));
 
@@ -23,19 +23,19 @@ class ServiceCarouselTest extends TestCase
 
         $content = $response->getContent();
 
-        $this->assertSame(8, substr_count($content, 'data-carousel-card'));
+        $this->assertSame(9, substr_count($content, 'data-carousel-card'));
         $this->assertSame(5, substr_count($content, 'class="section-badge"'));
         $this->assertSame(6, substr_count($content, 'bg-[linear-gradient(135deg,#fbf6ef_0%,#f3efe6_42%,#eef2ea_100%)]'));
     }
 
-    public function test_service_detail_page_keeps_showing_the_other_seven_services(): void
+    public function test_service_detail_page_keeps_showing_the_other_eight_services(): void
     {
         $response = $this->get(route('kurbanlik'));
 
         $response->assertOk()
             ->assertSee('Diğer hizmetlerimiz');
 
-        $this->assertSame(7, substr_count($response->getContent(), 'data-carousel-card'));
+        $this->assertSame(8, substr_count($response->getContent(), 'data-carousel-card'));
     }
 
     public function test_service_carousel_arrows_stay_available_on_mobile(): void

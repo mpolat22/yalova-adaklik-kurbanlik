@@ -9,9 +9,9 @@ class ServiceCardCtaTest extends TestCase
     public function test_service_cards_use_a_service_specific_call_to_action(): void
     {
         $pages = [
-            [route('home'), 8],
-            [route('services'), 8],
-            [route('kurbanlik'), 7],
+            [route('home'), 9],
+            [route('services'), 9],
+            [route('kurbanlik'), 8],
         ];
 
         foreach ($pages as [$url, $expectedCount]) {

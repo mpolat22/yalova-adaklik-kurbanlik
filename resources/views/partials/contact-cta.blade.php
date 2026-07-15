@@ -127,6 +127,26 @@
                         </div>
                     </div>
                 </div>
+
+                @if ($isContactPage)
+                    <div class="rounded-[1.7rem] border border-[#d2dccf] bg-white/72 p-5 shadow-[0_14px_34px_rgba(73,54,34,0.06)] backdrop-blur md:col-span-2 xl:col-span-4" data-public-transport>
+                        <div class="flex gap-4">
+                            <span class="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#6f8a67] text-white shadow-[0_10px_24px_rgba(111,138,103,0.28)]">
+                                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                    <rect x="4" y="3.5" width="16" height="16" rx="3"></rect>
+                                    <path d="M7 7.5h10M7 11.5h10M7.5 19.5v1.5M16.5 19.5v1.5"></path>
+                                    <circle cx="8" cy="16" r="1"></circle>
+                                    <circle cx="16" cy="16" r="1"></circle>
+                                </svg>
+                            </span>
+                            <div class="max-w-3xl">
+                                <p class="text-[0.8rem] font-extrabold uppercase tracking-[0.22em] text-[#587052]">Ulaşım</p>
+                                <h3 class="mt-2 text-[1.08rem] font-extrabold text-brand-900">Toplu Taşımayla Ulaşım</h3>
+                                <p class="mt-2 text-base leading-8 text-[#5f625b]">İşletmemize dolmuş ve minibüsle kolayca ulaşabilirsiniz. Toplu taşıma araçları işletmemizin doğrudan önünden geçmektedir.</p>
+                            </div>
+                        </div>
+                    </div>
+                @endif
             </div>
         </div>
     </div>
