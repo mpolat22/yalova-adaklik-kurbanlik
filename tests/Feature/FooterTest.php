@@ -27,8 +27,8 @@ class FooterTest extends TestCase
         foreach ([route('home'), route('gallery'), route('contact')] as $url) {
             $content = $this->get($url)->assertOk()->getContent();
 
-            $this->assertStringContainsString('mailto:yalovadaklik@hotmail.com', $content);
-            $this->assertStringContainsString('yalovadaklik@hotmail.com', $content);
+            $this->assertStringContainsString('mailto:yalovaadaklikkurbanlik@gmail.com', $content);
+            $this->assertStringContainsString('yalovaadaklikkurbanlik@gmail.com', $content);
             $this->assertStringNotContainsString('serhatelgin77@icloud.com', $content);
         }
     }

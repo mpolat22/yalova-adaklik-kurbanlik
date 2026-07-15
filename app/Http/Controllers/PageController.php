@@ -213,7 +213,7 @@ class PageController extends Controller
             'secondary_phone_display' => '0544 418 48 98',
             'secondary_phone_link' => '905444184898',
             'whatsapp_link' => '905413649379',
-            'email' => 'yalovadaklik@hotmail.com',
+            'email' => 'yalovaadaklikkurbanlik@gmail.com',
             'instagram_url' => 'https://www.instagram.com/elginkurbanlikadaklik?igsh=MTBrcTlmeGUxanA3eA%3D%3D&utm_source=qr',
             'facebook_url' => 'https://www.facebook.com/share/1DpHiNKPzM/?mibextid=wwXIfr',
         ];
